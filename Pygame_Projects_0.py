@@ -39,3 +39,4 @@ STRUCTURE OF PYGAME APPLICATION
 * Advised to start with a template.
 * MODULES: Load any modules your game needs.
 * EXTERNAL RESOURCES: Manage external resources. Load any sounds or images. If your game is played over the network, or it supports saving and loading from the file, this is where you'd handle it.
+
