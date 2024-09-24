@@ -61,3 +61,11 @@ UPDATING THE SCREEN
     - updates parts of the screen
 * You will generally use the   update()   method due to the fact that updating the entire screen can take a lot of time and may cause lag.
    - The lag is seen especially when updating larger screens
+-----------------------------------------------------------------------------------------------------------------
+GRAPHIC COORDINATES -- computer graphics
+* The origin of the screen, (0,0), is located at the top left
+* x-axis, to the right
+* y-axis, downward
+-----------------------------------------------------------------------------------------------------------------
+ADDING SURFACES
+* 
