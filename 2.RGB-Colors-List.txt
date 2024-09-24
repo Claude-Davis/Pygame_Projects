@@ -1,4 +1,14 @@
-Red = (255,0,0)
-Green = (0,255,0)
-Blue = (0,0,255)
+Link: https://www.rapidtables.com/web/color/RGB_Color.html#:~:text=RGB%20color%20codes%20chart.%20Hover%20with
+
+(R) Red = (255,0,0)
+(G) Green = (0,255,0)
+(B) Blue = (0,0,255)
+
+Orange = (255,128,0)
+Yellow = (255,255,0)
+Pink = (255,0,128)
 Purple = (255,0,255)
+
+Black = (0,0,0)
+Grey = (128,128,128)
+White = (255,255,255)
