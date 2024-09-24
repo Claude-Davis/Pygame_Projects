@@ -1,4 +1,5 @@
-# file name: Visual-Notes_0.py
+# This file displays the basics/foundation of creating a game
+# 09/24/2024
 
 import pygame
 
