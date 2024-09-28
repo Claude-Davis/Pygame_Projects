@@ -1,0 +1,28 @@
+COLLISION
+* def. When two or more rects are touching / inside of one another.
+---------------------------------------------------------------------------------------------------------------------
+COLLISION METHODS
+* used to check for a collision
+* Rects already have baked-in methods to check for a collision:
+  collidepoint(x,y)
+    - boolean
+  colliderect(Rect)
+    - boolean
+  collidelist(list)
+    - index
+  collidelistall(list)
+    - list
+  clipline(x1,y1,x2,y2)
+    - ((cx1,cy1),(cx2,cy2))
+---------------------------------------------------------------------------------------------------------------------
+METHOD 1: collidepoint()
+* Can take two parameters (x,y coordinates) or a tuple with the coordinates inside.
+If the point is inside of a rect, this method returns True, otherwise it returns False.
+
+Example:
+  point1 = (40,40)
+  poiny2 = (60,60)
+  rect = pygame.Rect(0,0,50,50)
+  print(rect.collidepoint(point1)  # returns True
+  print(rect.collidepoint(point2)  # returns False
+---------------------------------------------------------------------------------------------------------------------
