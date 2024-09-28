@@ -25,3 +25,5 @@ MOVING RECTS
     clock = pygame.tick.Clock()
     clock.tick()
 -----------------------------------------------------------------------------------------------------------------
+STAYING IN-BOUNDS
+* The program needs to check if the rect's new position would be off-screen
