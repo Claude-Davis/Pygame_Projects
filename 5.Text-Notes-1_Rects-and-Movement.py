@@ -27,3 +27,9 @@ MOVING RECTS
 -----------------------------------------------------------------------------------------------------------------
 STAYING IN-BOUNDS
 * The program needs to check if the rect's new position would be off-screen
+-----------------------------------------------------------------------------------------------------------------
+DIRECTIONS
+* Increase x-value = rightward direction
+* Decrease x-value = leftward direction
+* Increase y-value = downward direction
+* Decrease y-value = upward direction
