@@ -1,3 +1,5 @@
+# Single rect travels across the display
+
 import pygame
 
 pygame.init()
