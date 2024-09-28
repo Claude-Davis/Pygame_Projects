@@ -1,3 +1,5 @@
+# Several rects are created and resemble an arrow traveling across the display.
+
 import pygame
 
 pygame.init()
