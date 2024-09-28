@@ -21,7 +21,7 @@ while running:
         rect_speed[0] = -rect_speed[0]
             # The negative sign (-) inverts the speed and send the rect in the opposite direction
         rect_speed[1] = -rect_speed[1]
-    rect = rect.move(rect_speed)
+    rect = rect.move(rect_speed)   # Causes the illusion of movement
 
 
     screen.fill(color=(0,0,0))
