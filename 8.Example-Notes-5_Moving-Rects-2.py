@@ -1,4 +1,4 @@
-# Single rect travels across the display
+# Single rect moves, diagonally, across the display
 
 import pygame
 
