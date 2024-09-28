@@ -6,9 +6,22 @@ RECTS
 -----------------------------------------------------------------------------------------------------------------
 WHY USE RECTS?
 * Allows you to automatically update surfaces by only change information in the rect.
+* Instead of having to calculate coordinates of the bottom right corner of a Rect:
+    coordinates = (rect.x + rect.width, rect.y + rect.height)
+Helpful Fields:
+    - x,y
+    - top, left, bottom, right
+    - topleft, bottomleft, topright, bottomright
+    - midtop, midleft, midbottom, midright
+    - center, centerx, centery
+    - w,h     
 -----------------------------------------------------------------------------------------------------------------
 MOVING RECTS
 * The move() method updates the position of your Rect.
     rect = rect.move(5,5)
 * Be sure to store the move() method since it returns a Rect.
+* Moving a rect is really just creating a new rect in  a different location and overwriting the previous rect.
+* Include a clock:
+    clock = pygame.tick.Clock()
+    clock.tick()
 -----------------------------------------------------------------------------------------------------------------
