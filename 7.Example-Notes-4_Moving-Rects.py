@@ -14,7 +14,7 @@ running = True
 
 while running:
     rect = rect.move(5,5)                  # moves the rect 5 units along the x- and y-axis
-    screen.blit(surf, (rect.x,rect.y))
+    screen.blit(surf, (rect.x,rect.y))     # a streak of the previous rects remain because this blit is only updating the coordinates given to it.
     pygame.display.flip()
     clock.tick(60)
 
