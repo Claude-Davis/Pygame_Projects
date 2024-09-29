@@ -1,6 +1,6 @@
 COLLISION
 * def. When two or more rects are touching / inside of one another.
----------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 COLLISION METHODS
 * used to check for a collision
 * Rects already have baked-in methods to check for a collision:
@@ -14,7 +14,7 @@ COLLISION METHODS
     - list
   clipline(x1,y1,x2,y2)
     - ((cx1,cy1),(cx2,cy2))
----------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 METHOD 1: collidepoint()
 * Can take two parameters (x,y coordinates) or a tuple with the coordinates inside.
 If the point is inside of a rect, this method returns True, otherwise it returns False.
@@ -25,4 +25,73 @@ Example:
   rect = pygame.Rect(0,0,50,50)
   print(rect.collidepoint(point1)  # returns True
   print(rect.collidepoint(point2)  # returns False
----------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+METHOD 2: colliderect()
+* Takes a rect as a parameter and returns True if two rects intersect.
+
+Example:
+  red = pygame.Rect(0,0,50,50)
+  green = pygame.Rect(48,48,50,50)
+  blue = pygame.Rect(0,78,50,50)
+  print(red.colliderect(green))   # returns True
+  print(blue.colliderect(red))   # returns False
+  print(green.colliderect(blue))   # returns True
+------------------------------------------------------------------------------------------------------------------
+METHOD 3: collidelist()
+* Takes in a list of rects and returns the index of the first rect on the list that collides with the calling rect.
+
+Example:
+  red = pygame.Rect(0,0,50,50)
+  green = pygame.Rect(48,48,50,50)
+  blue = pygame.Rect(0,78,50,50)
+  yellow = pygame.Rect(75,75,50,50)
+  list1 = [green,blue]
+  list2 = [red,blue]
+  list3 = [red,green,blue]
+  print(red.collidelist(list1))  #  0
+  print(yellow.collidelist(list2))  #  -1
+  print(yellow.collidelist(list3))   #  1
+------------------------------------------------------------------------------------------------------------------
+METHOD 4: collidelistall()
+* Takes a list of rects and returns a list of all the indexes of all rects that the calling rect collides with.
+
+Example:
+  red = pygame.Rect(0,0,50,50)
+  green = pygame.Rect(48,48,50,50)
+  blue = pygame.Rect(0,78,50,50)
+  yellow = pygame.Rect(75,75,50,50)
+  list1 = [green,blue]
+  list2 = [red,blue]
+  list3 = [red,green,blue]
+  list4 = [red,blue,yellow]
+  print(red.collidelistall(list1)  # [0]
+  print(yellow.collidelistall(list3))  # [1]
+  print(green.collidelistall(list4))  # [0,1,2]
+------------------------------------------------------------------------------------------------------------------
+METHOD 5: clipline()
+* Takes 4 coordinates
+  - rect.clipline(start_x, start_y, end_x, end_y)
+* Returns 2 tuples containing the coordinates of a line that is cropped to be inside the rect.
+  - Return value will be an empty tuple if no cropping exists.
+  ((cropped_start_x,cropped_start_y), (cropped_end_x,cropped_end_y))
+
+Example:
+  screen = pg.display.set_mode((500,500))
+
+  rect1 = pg.Rect(0,0,200,200)
+  rect1.center = pg.Rect(250,250)
+  surf1 = (pg.Surface(rect1.size))
+  surf1.fill((255,0,0))
+
+  line1 = ((50,500), (350,0))
+  line2 = rect1.clipline(line1)
+  screen.blit(surf1, rect1.topleft)
+  pg.draw.line(screen,(255,255,255),line1[0], line1[1], width=3)
+  pg.draw.line(screen,(0,0,255),line2[0]),line2[1],width=4)
+
+  pg.display.flip()
+
+Explanation of Example:
+* created a surface on the 500x500 display
+* created a Rect that is 200x200; its center is set at the center of the display
+------------------------------------------------------------------------------------------------------------------
