@@ -8,13 +8,18 @@ WHY USE RECTS?
 * Allows you to automatically update surfaces by only change information in the rect.
 * Instead of having to calculate coordinates of the bottom right corner of a Rect:
     coordinates = (rect.x + rect.width, rect.y + rect.height)
-Helpful Fields:
+* Easily locate the coordinates of a rect:
+    print(rectName.topleft)
+    print(rectName.topright)
+    print(rectName.bottomleft)
+    print(rectName.bottomright)
+    print(rectName.center)
+More:
     - x,y
     - top, left, bottom, right
-    - topleft, bottomleft, topright, bottomright
     - midtop, midleft, midbottom, midright
     - center, centerx, centery
-    - w,h     
+    - w,h 
 -----------------------------------------------------------------------------------------------------------------
 MOVING RECTS
 * The move() method updates the position of your Rect.
