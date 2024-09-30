@@ -1,0 +1,125 @@
+import pygame
+pygame.init()
+clock = pygame.time.Clock()
+
+screen = pygame.display.set_mode((1000,500))
+
+rect1 = pygame.Rect(0,0,100,100)
+rect2 = pygame.Rect(0,400,100,100)
+
+rect_speed = [5,0]
+
+surf1 = pygame.Surface((rect1.w,rect1.h))
+surf1.fill(color=(0,255,0))
+
+surf2 = pygame.Surface((rect2.w,rect2.h))
+surf2.fill(color=(0,0,255))
+
+
+run = True
+while run:
+    if (rect1.x<0 or rect1.x>900):
+        rect_speed[0] = -rect_speed[0]
+    rect1 = rect1.move(rect_speed)
+
+    if (rect2.x<0 or rect2.x>900):
+        rect_speed[1] = -rect_speed[1]
+    rect2 = rect2.move(rect_speed)
+
+    screen.fill(color=(0,0,0))
+    screen.blit(surf1, (rect1.x,rect1.y))
+    screen.blit(surf2, (rect2.x, rect2.y))
+    pygame.display.flip()
+    clock.tick(60)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+-------------------------------------
+import pygame
+
+pygame.init()
+
+screen = pygame.display.set_mode((600,600))
+
+rect = pygame.Rect(0,0,60,60)
+
+surf = pygame.Surface((rect.w,rect.h))
+surf.fill(color=(255,0,0))
+
+screen.blit(surf, (0,0))
+screen.blit(surf,(0,540))
+screen.blit(surf, (540,540))
+screen.blit(surf, (540,0))
+screen.blit(surf, (270,270))
+
+pygame.display.flip()
+
+run = True
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+---------------------------------
+import pygame
+
+pygame.init()
+clock = pygame.time.Clock()
+
+screen = pygame.display.set_mode((400,400))
+
+rect = pygame.Rect(0,0,200,200)
+rect1 = pygame.Rect(0,0,200,200)
+
+rect_speed = [5,0]
+
+surf = pygame.Surface((rect.w,rect.h))
+surf.fill(color=(255,255,255))
+
+surf1 = pygame.Surface((rect1.w,rect1.h))
+surf1.fill(color=(0,255,0))
+
+rect1_start = False
+
+running = True
+while running:
+# rect covers display in white
+    if not rect1_start:
+        if (rect.x==0):
+            if (rect.y==0):
+                rect_speed = [5,0]
+            elif (rect.y==200):
+                rect_speed = [0,-5]
+        elif (rect.x==200):
+            if (rect.y==0):
+                rect_speed = [0,5]
+            elif (rect.y==200):
+                rect_speed = [-5,0]
+        rect = rect.move(rect_speed)
+    rect1_start = True
+
+
+    if rect1_start == True:
+        if (rect1.x == 0):
+            if (rect1.y == 0):
+                rect_speed = [5, 0]
+            elif (rect1.y == 200):
+                rect_speed = [0, -5]
+        elif (rect1.x == 200):
+            if (rect1.y == 0):
+                rect_speed = [0, 5]
+            elif (rect.y == 200):
+                rect_speed = [-5, 0]
+        rect = rect1.move(rect_speed)
+
+    screen.blit(surf, (rect.x,rect.y))
+    screen.blit(surf1, (rect.x,rect.y))
+    pygame.display.flip()
+
+    ##
+
+    clock.tick(60)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
