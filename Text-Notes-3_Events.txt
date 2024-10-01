@@ -8,6 +8,14 @@ EVENTS
 * All events have a type (and some types has their own feilds).
 * The function below allows Events to be retrieved from the Event Queue:
       pygame.event.get()
+
+  Example:
+      for event in pygame.event.get():
+          if event.type == pygame.QUIT:
+              running = False
+          elif event.type == pygame.KEYDOWN:
+              if event.key == pygame.K_ESCAPE:
+                running = False
 -----------------------------------------------------------------------------------------------------------------
 EVENT QUEUE
 * The Event Queue is a list of evets that Pygame collects in realtime as users interact with the game window or operating system.
