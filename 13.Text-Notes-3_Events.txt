@@ -1,1 +1,78 @@
+EVENTS
+* The Pygame Display "listens" to what happens to and in it.
+  - minimizing or closing the Display window
+  - moving the mouse around inside the Display
+  - presssing keys(keyboard) or buttons(joystick)
+  - etc.
+* All these things are recorded by Pygame as events.
+* All events have a type (and some types has their own feilds).
+-----------------------------------------------------------------------------------------------------------------
+EVENT QUEUE
+* The Event Queue is a list of evets that Pygame collects in realtime as users interact with the game window or operating system.
+* Events are saved on the Event Queue in the order that they happen.
+* If the display hasn't been initialized, the Event Queue might not work.
+* It is through the Event Queue that information is received from external sources (keyboard/mouse clicks, closing the window, etc.).
+-----------------------------------------------------------------------------------------------------------------
+EVENT TYPES
+* ALL EVENT TYPES HERE:  https://www.pygame.org/docs/ref/event.html
 
+* At every iteration of your main game loop. your game must:
+  - go through all events in the event loop.
+  - identify the type of an event.
+  - take appropriate action.
+
+Examples - Event Types and Thier Fields
+  - KEYUP / KEYDOWN:
+    - key: 
+  - MOUSEMOTION:
+    - pos: a tuple containing the mouse pointer's new position.
+  - MOUSEBUTTONUP / MOUSEBUTTONDOWN:
+    - pos: a tuple containing the mouse pointer's new position.
+    - button: which button was pressed. 1 for left click, 2 for middle click, 3 for right click.
+-----------------------------------------------------------------------------------------------------------------
+PYGAME CONSTANTS
+* ALL CONSTANTS HERE:  https://www.pygame.org/doc/ref/key.html
+
+* Import all constants with this command:
+    from pygame.locals import *
+-----------------------------------------------------------------------------------------------------------------
+KEY MODULE
+* A single KEYDOWN event is generated if a key has been pressed. The Key Module allows you to know if a key is currently being pressed.
+* Syntax:
+    keys = pygame.key.get_pressed()
+  - This code records a list of all keys currently being pressed.
+
+  Example 1:
+    if keys[K_w]:     #meaning - if the w key is being pressed
+      player.jump()   #meaning - take the appropriate action; in this case, the player will be able to jump
+  Example 2:
+    #main game loop
+    while True:
+      for event in pygame.events.get():
+        pass #handle all events
+
+    #AFTER the event loop has past, read keyboard
+    if keys[K_w]:     #if the w key is being pressed
+      player.jump()   #take appropriate action
+    if keys[K_s]:     #if the s key is being pressed
+      player.duck()   #take appropriate action
+
+Warning!:
+* The key module is not appropriate for timing.
+* The order of keys pressed is not preserved, the Event Queue is need for this.
+-----------------------------------------------------------------------------------------------------------------
+PUMPING THE EVENT QUEUE
+* In cases where you do not want the system to handle any events (such as during an unskippable cutscene), no information will be going to the Event Queue, which could cause the operating system to treat Pygame as if it stopped responding.
+* To avoid this issue, use:
+    pygame.event.pump()
+  - and not:
+    pygame.event.get()
+-----------------------------------------------------------------------------------------------------------------
+INSPECTING EVENTS
+* If you're unsure of the name of an event or what fields are available, add these lines of code inside the Event Queue:
+  print("Event name: " + str(pg.event.event_name(event.type)))
+  print("Event fict: " + str(event.dict))
+* Whenever an event happens, your consile will print:
+  - its name (which can be used when checking for the event's type)
+  - its fields (which can be accessed once the event type is known)
+  
