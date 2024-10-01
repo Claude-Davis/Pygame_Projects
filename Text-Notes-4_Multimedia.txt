@@ -109,6 +109,9 @@ FONT MODULE
       myfont2 = pygame.font.Font("fontfile.ttf")
 
   FONT MODULE - RENDER
+  * You cannot blit a Font object directly to the Display surface. The render() method of the Font object must
+    be used to create a Surface that contains the rendered text. Once the text is rendered, then you can blit
+    that Surface onto the Display.
   * post creating a Font object, you can then call its render() method
   * takes a string containg the text you wish to write, a Boolean for the antialias option, and a color
     - antialias smoothes out the edges of your letters
