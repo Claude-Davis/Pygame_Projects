@@ -1,0 +1,62 @@
+DRAW MODULE
+* Contains several functions for drawing shapes.
+* Draw objects are not created, instead you use functions available in the modules.
+
+  DRAW MODULE - RECT
+  * Takes in a target Surface, a color, and a Rect
+  * Returns a Recy that includes all of the altered pixels
+  * pygame.draw.rect(target_surface,color,Rect) -> Rect
+ 1.  Example:
+      pg.draw.rect(screen, (255,0,0), pygame.Rect(15,15,50,50)
+
+  DARW MODULE - POLYGON
+  * Takes in a target Surface, a color, and a list of points
+  * Returns a Rect that includes all of the polygon
+  * pygame.draw.polygon(target_surface, color, points) -> Rect
+ 2.  Example:
+      pg.draw.polygon(screen, (0,255,0), ((50,50),(125,125),(75,175),(25,350))
+
+  DRAW MODULE - CIRCLE
+  * Takes in a target Surface, a color, the coordinates of the center, and the radius
+  * Returns a Rect that includes the circle
+  * pygame.draw.circle(target_surface, color, center, radius) -> Rect
+ 3.  Example:
+      pg.draw.circle(screen, (0,0,255), (75,90), 30)
+
+  DRAW MODULE - ELLIPSE
+  * Takes a target Surface, a color, and a Rect
+  * Returns a Rect that includes the ellipse
+  * pygame.draw.ellipse(target_surface, color, Rect) -> Rect
+ 4.  Example: 
+       pg.draw.ellipse(screen, (255,255,0), Rect(20,20,50,200)
+
+  DRAW MODULE - LINE
+  * Takes in a target Surface, a color, and 2 pairs of coordinates
+  * The pairs of coordinates represent that starting point of the line and its ending point.
+  * Returns a Rect that includes the line
+  * pygame.draw.line(target_Surface,color,start_pos,end_pos) -> Rect
+ 5.  Example:
+       pg.draw.line(screen, (180,180,180), (0,0), (450,450))
+--------------------------------------------------------------------------------------------------------------------
+IMAGE MODULE
+* Pygame allows loading images from files.
+* Utilize functions in the Image module to load images, and these functions will give you the Surface.
+* It is recommended to always convert the image using either of the following:
+    convert()
+    - main method
+    convert_alpha()
+    - use this method for images with transparency
+* Supported Image Types: JPEG, PNG, BMP, GIF(non-animated), LBM, XPM, SVG, PCX, PNM, TGA(uncompressed), TIFF
+
+  IMAGE MODULE - LOAD
+  * Takes in the file name and Returns a Surface with the image in it.
+  * pygame.image.load(filename).convert() -> Surface
+  * pygame.image.load(filename).convert_alpha() -> Surface
+ 1.  Example:
+        face = pg.image.load("happy-face.png").convert()
+        screeen.blit(face, (0,0))
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
