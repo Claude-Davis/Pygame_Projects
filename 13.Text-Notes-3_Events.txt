@@ -31,7 +31,7 @@ Examples - Event Types and Thier Fields
     - button: which button was pressed. 1 for left click, 2 for middle click, 3 for right click.
 -----------------------------------------------------------------------------------------------------------------
 PYGAME CONSTANTS
-* ALL CONSTANTS HERE:  https://www.pygame.org/doc/ref/key.html
+* ALL CONSTANTS HERE:  https://www.pygame.org/docs/ref/key.html
 
 * Import all constants with this command:
     from pygame.locals import *
