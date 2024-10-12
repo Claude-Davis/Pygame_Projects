@@ -13,3 +13,7 @@ Requirements:
   * The "fruit" must spawn randomly
 
   * Points should be displayed and updated after every fruit caught.
+
+Personal Add-ons:
+  * Colored display screen
+  * On-screen text to display user's score
