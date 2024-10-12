@@ -31,7 +31,7 @@ EVENT TYPES
   - identify the type of an event.
   - take appropriate action.
 
-Examples - Event Types and Thier Fields
+Examples - Event Types and Their Fields
   - KEYUP / KEYDOWN:
     - key: 
   - MOUSEMOTION:
