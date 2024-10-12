@@ -1,4 +1,4 @@
-# This program consusts of 2 rects. 1 travels horizontally across the screen, repetitively. The other is motionless and stretches vertically across the screen. As the moving rect collides with the stationary rect, the stationary rect changes color, it then reverts to its original collor when te moving rect is no longer colliding with it.
+# This program consists of 2 rects. 1 travels horizontally across the screen, repetitively. The other is motionless and stretches vertically across the screen. As the moving rect collides with the stationary rect, the stationary rect changes color, it then reverts to its original collor when te moving rect is no longer colliding with it.
 
 import pygame
 pygame.init()
