@@ -4,7 +4,7 @@ DRAW MODULE
 
   DRAW MODULE - RECT
   * Takes in a target Surface, a color, and a Rect
-  * Returns a Recy that includes all of the altered pixels
+  * Returns a Rect that includes all of the altered pixels
   * pygame.draw.rect(target_surface,color,Rect) -> Rect
  1.  Example:
       pg.draw.rect(screen, (255,0,0), pygame.Rect(15,15,50,50)
