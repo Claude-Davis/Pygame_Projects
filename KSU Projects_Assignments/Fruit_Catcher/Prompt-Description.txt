@@ -1,0 +1,19 @@
+Title: Fruit Catcher Game
+
+https://www.kennesaw.edu/ccse/first-year-experience/cse1321l_python/assignments/cse1321l_assignment4_fall24.pdf
+
+Prompt:
+The player controls a "basket" (white rectangle) at the bottom of the screen using the arrow keys to try and catch the "fruit" (red square) falling from the top of the screen. The player earns 1 point for each fruit that he/she catches, and the total number of points should be displayed on the screen. The game should continue indefinitely until the player chooses to exit the game.
+
+Requirements:
+•	Screen size: 800 (width) by 600 (height)
+•	Basket size: 100 (w) by 20 (h)
+•	Fruit size: 20 by 20
+
+•	The "fruit" must spawn randomly
+
+•	Points should be displayed and updated after each fruit is caught.
+
+Personal Add-ons:
+•	Colored display screen
+•	On-screen instructions
