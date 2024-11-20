@@ -29,15 +29,18 @@ ALL ASSETS
 
 	For audio, the game includes background music (music file.mp3) and a sound effect to accompany the user’s attack (fireball attack audio.wav).
 	
-	The game also features four (4)  full-size images: the Cover Screen (cover screen.png), the background that is shown during the game play (setting image.png), the Game Over Screen for the player’s loss (game over image.png), and the Game Over Image for the player’s win (victory screen.png).
+	The game also features four (4)  full-size images: the Cover Screen (cover screen.png), the background that is shown during the game play (setting image.png), the Game Over Screen for the player’s loss (game over image.png), and the Game Over Image 
+	for the player’s win (victory screen.png).
 	
-	The other image files used in the game include those for the player’s character (Dragon.png), the opponents (knight yellow.png), the player’s attack (FireBall.png), and the decorative background items (wall torch.png, treasure open.png, treasure closed.png)
+	The other image files used in the game include those for the player’s character (Dragon.png), the opponents (knight yellow.png), the player’s attack (FireBall.png), and the decorative background items (wall torch.png, treasure open.png, treasure
+	closed.png)
 
 
 
 
 DISCARDED FEATURES
-	Originally, our game was to include a second opponent, termed X.Heroes, that would spawn in either after a certain amount of time or after the player reached a certain number of kills. These opponents would have had more health and dealt more damage as their purpose was to increase the game’s difficulty level.
+	Originally, our game was to include a second opponent, termed X.Heroes, that would spawn in either after a certain amount of time or after the player reached a certain number of kills. These opponents would have had more health and dealt more damage
+	as their purpose was to increase the game’s difficulty level.
 
 	Another planned feature was that as the player knocked out opponents, another character would spawn in behind the player’s original character. This idea was unintentionally overlooked, and when noticed the team decided to continue without it.
 
@@ -51,7 +54,7 @@ CHALLENGES
 
 
 DEVELOPMENT TIMELINE
-	Our team started working on Cave Defender in the latter part of September, and the game was completed on the 8th of November.
+	Our team started working on Cave Defender in the later part of September, and the game was completed on the 8th of November.
 
 
 
@@ -59,6 +62,6 @@ DEVELOPMENT TIMELINE
 TEAM CONTRIBUTIONS
 	Mustafa Mustaf - The team leader. His key contributions are as the presenter of Cave Defender and meeting organizer.
 	Connor Layton - One of two coders on the team. His key contribution is the Instructions Screen.
-	Starlan Davis - The second coder on the team. Her key contribution is the movement of the player and opponents. 
+	Claudé Davis - The second coder on the team. Her key contribution is the movement of the player and opponents. 
 	Charles Kimani - The visual asset coordinator. His key attributions are the image files.
 	Benedict Adusei - The audio asset coordinator. His key attributions are the audio files.
