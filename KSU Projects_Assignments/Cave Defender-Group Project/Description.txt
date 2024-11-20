@@ -1,0 +1,64 @@
+GENERAL DESCRIPTION
+	* Input Methods: What input methods are used and what functions do they perform?
+	      Our game takes in input by way of both the Mouse Button and the Keyboard.
+	
+	      While on the Cover Screen, clicking the Mouse allows the player to move on to the Instructions Screen.
+	
+	      All Keyboard inputs are listed below:
+	        - 'M' : The 'M' key allows the player to pull up or exit the Instructions Screen throughout the game.
+	        - 'R' : The 'R' key allows the player to restart the game after fulfilling either the win condition or the lose conditoin.
+	        - 'Spacebar' : The 'Spacebar' is used to shoot / attack. 
+	        - 'W,A,S,D' : The 'W,A,S,D' keys are one of two methods by which the player controls their character. The 'W' moves the character up, the 'A' moves the character left, the 'S' moves the character down, and the 'D' moves the character right.
+	        - Arrow Keys : The arrow keys are the second method by which the player controls their character. The ' moves the character up, the 'A' moves the character left, the 'S' moves the character down, and the 'D' moves the character to the right.
+		- 'Escape' : The 'Escape' key allows the user to quit / exit the game.
+
+	* Objective: What is the “end goal” of our game?
+		The goal of the game is for the player to “defend”  their cave from the opponents. Once the player kills 10 opponents, he or she has completed the objective and won the game. 
+
+	* Fail State: Does our game have a fail state? What is it?How to Quit
+		The fail state of our game is the player’s loss of health (which starts at 1200).
+
+	* Methods to Quit: What are the ways to quit the game?
+		Our game provides two methods for the user to quit. One is to click the "X" located atthe top right of the screen, and the other is to press the 'Escape' key on the keyboard.
+
+
+
+
+ALL ASSETS
+	Our game utilizes both audio and visual assets.
+
+	For audio, the game includes background music (music file.mp3) and a sound effect to accompany the user’s attack (fireball attack audio.wav).
+	
+	The game also features four (4)  full-size images: the Cover Screen (cover screen.png), the background that is shown during the game play (setting image.png), the Game Over Screen for the player’s loss (game over image.png), and the Game Over Image for the player’s win (victory screen.png).
+	
+	The other image files used in the game include those for the player’s character (Dragon.png), the opponents (knight yellow.png), the player’s attack (FireBall.png), and the decorative background items (wall torch.png, treasure open.png, treasure closed.png)
+
+
+
+
+DISCARDED FEATURES
+	Originally, our game was to include a second opponent, termed X.Heroes, that would spawn in either after a certain amount of time or after the player reached a certain number of kills. These opponents would have had more health and dealt more damage as their purpose was to increase the game’s difficulty level.
+
+	Another planned feature was that as the player knocked out opponents, another character would spawn in behind the player’s original character. This idea was unintentionally overlooked, and when noticed the team decided to continue without it.
+
+
+
+
+CHALLENGES
+	One of the challenges experienced while creating this game was understanding how to use Sprite groups. This was resolved by watching relevant Youtube videos and reading informatoin from Pygame's website.
+
+
+
+
+DEVELOPMENT TIMELINE
+	Our team started working on Cave Defender in the latter part of September, and the game was completed on the 8th of November.
+
+
+
+
+TEAM CONTRIBUTIONS
+	Mustafa Mustaf - The team leader. His key contributions are as the presenter of Cave Defender and meeting organizer.
+	Connor Layton - One of two coders on the team. His key contribution is the Instructions Screen.
+	Starlan Davis - The second coder on the team. Her key contribution is the movement of the player and opponents. 
+	Charles Kimani - The visual asset coordinator. His key attributions are the image files.
+	Benedict Adusei - The audio asset coordinator. His key attributions are the audio files.
