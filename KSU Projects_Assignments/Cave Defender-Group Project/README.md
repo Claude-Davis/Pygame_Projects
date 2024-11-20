@@ -1,11 +1,12 @@
 # Cave-Defender_Main-Files
 
+  # START DATE: September 2024
   # DUE DATE: 10 November 2024
   # PRESENTATION: 13 November 2024
 
   Professor: Betty Kretlow
   
-  Group Members: Mustafa Mustaf, Charles Kimani, Connor Layton, Benedict Adusei, Starlan Davis
+  Group Members: Mustafa Mustaf, Charles Kimani, Connor Layton, Benedict Adusei, Claudé Davis
   
   Project Reqs:
   * At least 10 different Surface objects visible on the Display
@@ -27,7 +28,7 @@
 
   Roles:
     
-    # Coders = Connor, Starlan
+    # Coders = Connor, Claudé
     
     # Audio + Images = Charles, Benedict
     
