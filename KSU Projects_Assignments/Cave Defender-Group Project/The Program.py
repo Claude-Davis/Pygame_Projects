@@ -1,8 +1,3 @@
-# STILL NEEDS:
-        # audio files
-        # image files for user, background/setting, heroes, the stones, fireballs, fire and furnaces
-
-
 import pygame,sys
 pygame.init()
 
